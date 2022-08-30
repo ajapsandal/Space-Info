@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/drawable-v24/item_backgroud.xml" value="0.2045" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/drawable-v24/text_background_content.xml" value="0.2625" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/drawable/animation.xml" value="0.264" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/drawable/background.xml" value="0.264" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/drawable/background1.xml" value="0.264" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/drawable/background2.xml" value="0.264" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/drawable/ic_launcher_background.xml" value="0.264" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/drawable/text_background.xml" value="0.264" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/layout/activity_apod.xml" value="0.22" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/layout/activity_date_photo.xml" value="0.14982164090368608" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/layout/activity_photo.xml" value="0.16" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/layout/item_date.xml" value="0.25" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/layout/item_photo.xml" value="0.15" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/layout/photo.xml" value="0.19119804400977994" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/layout/photo_activity.xml" value="0.19579865239793895" />
+        <entry key="..\:/Users/ilyas/AndroidStudioProjects/NASA/app/src/main/res/menu/menu_main.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

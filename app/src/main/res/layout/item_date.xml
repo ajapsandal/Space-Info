@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:backgroundTint="@color/textBackground"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/textBackground"
+        android:drawableLeft="@android:drawable/ic_menu_day"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textColor="@color/white"
+        tools:text="test text" />
+
+</androidx.cardview.widget.CardView>

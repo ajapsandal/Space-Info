@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#80190849</color>
+    <color name="colorPrimaryDark">#1D0F51</color>
+    <color name="colorAccent">#1D0F51</color>
+    <color name="mainMenuBackground">#000A2F</color>
+    <color name="mainMenuBackground1">#1D0F51</color>
+    <color name="mainMenuBackgroundCenter">#080B49</color>
+    <color name="textColor">#EAEAEA</color>
+    <color name="textBackground">#1A000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="toolbarColor">#66000000</color>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Space Info</string>
+    <string name="logo_text">SPACE INFORMATION</string>
+    <string name="menuTextFirst">Фотографии земли</string>
+    <string name="exit">Выход</string>
+    <string name="photo_manifest">Фотографии</string>
+    <string name="day_photo">Фотография дня</string>
+</resources>
