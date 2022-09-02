@@ -49,6 +49,6 @@ public class PhotoActivity extends AppCompatActivity {
 
             }
         });
-        
+
     }
 }
