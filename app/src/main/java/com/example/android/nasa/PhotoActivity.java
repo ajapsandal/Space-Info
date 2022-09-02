@@ -21,7 +21,6 @@ public class PhotoActivity extends AppCompatActivity {
     private SubsamplingScaleImageView imageView;
     private Bitmap photo;
     private static final String IMAGE_URL = "image_url";
-    private Button save;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,6 @@ public class PhotoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_photo);
 
         imageView = findViewById(R.id.image);
-        save = findViewById(R.id.saveButton);
 
         ImageLoader.getInstance().loadImage(getIntent().getStringExtra(IMAGE_URL),new SimpleImageLoadingListener() {
             @Override
@@ -51,7 +49,6 @@ public class PhotoActivity extends AppCompatActivity {
 
             }
         });
-
-
+        
     }
 }
