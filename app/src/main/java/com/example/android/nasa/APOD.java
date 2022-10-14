@@ -90,8 +90,12 @@ public class APOD extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<APODData> call, Throwable t) {
+<<<<<<< HEAD
                 Toast.makeText(APOD.this, "Ошибка в получении данных", Toast.LENGTH_LONG);
                 info.setText("Не удалось восстановить соединение с сервером");
+=======
+                info.setText(t.getMessage() + "Ошибка");
+>>>>>>> 18577030d785950a2c795ba57dfc81e4fbdafd44
             }
         });
     }
