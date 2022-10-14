@@ -32,21 +32,14 @@ public class PhotoActivity extends AppCompatActivity {
 
         imageView = findViewById(R.id.image);
 
-        ImageLoader.getInstance().loadImage(getIntent().getStringExtra(IMAGE_URL),new SimpleImageLoadingListener() {
+        ImageLoader.getInstance().loadImage(getIntent().getStringExtra(IMAGE_URL), new SimpleImageLoadingListener() {
             @Override
             public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-                if(!isFinishing()) {
+                if (!isFinishing()) {
                     photo = loadedImage;
                     imageView.setImage(ImageSource.cachedBitmap(loadedImage));
                     findViewById(R.id.progress).setVisibility(View.GONE);
                 }
-            }
-        });
-
-        save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
             }
         });
 
