@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.widget.Toolbar;
 
 import com.davemorrissey.labs.subscaleview.ImageSource;
@@ -66,7 +67,7 @@ public class APOD extends AppCompatActivity {
         call.enqueue(new Callback<APODData>() {
             @Override
             public void onResponse(Call<APODData> call, Response<APODData> response) {
-                if(!response.isSuccessful()){
+                if (!response.isSuccessful()) {
                     info.setText("Ошибка!");
                     return;
                 }
@@ -78,7 +79,7 @@ public class APOD extends AppCompatActivity {
                 ImageLoader.getInstance().loadImage(data.getUrl(), new SimpleImageLoadingListener() {
                     @Override
                     public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-                        if(!isFinishing()){
+                        if (!isFinishing()) {
                             photo = loadedImage;
                             image.setImage(ImageSource.cachedBitmap(loadedImage));
                             findViewById(R.id.progressApod).setVisibility(View.GONE);
@@ -89,12 +90,10 @@ public class APOD extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<APODData> call, Throwable t) {
-                info.setText(t.getMessage() + "HUI");
+                Toast.makeText(APOD.this, "Ошибка в получении данных", Toast.LENGTH_LONG);
+                info.setText("Не удалось восстановить соединение с сервером");
             }
         });
-
-
     }
-
 }
 

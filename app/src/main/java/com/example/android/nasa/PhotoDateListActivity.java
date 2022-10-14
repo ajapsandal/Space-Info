@@ -16,7 +16,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.example.android.nasa.api.DatePhotos;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,8 +27,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.functions.BiConsumer;
 import io.reactivex.schedulers.Schedulers;
-
-
 
 
 public class PhotoDateListActivity extends AppCompatActivity {
@@ -67,25 +67,25 @@ public class PhotoDateListActivity extends AppCompatActivity {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BiConsumer<List<DatePhotos>, Throwable>() {
                     @Override
-                    public void accept(List<DatePhotos> datePhotos, Throwable throwable) throws Exception{
-                        if(throwable != null) {
-                            Toast.makeText(PhotoDateListActivity.this, "Ошибка", Toast.LENGTH_LONG);
-                        }
-                        else {
+                    public void accept(List<DatePhotos> datePhotos, Throwable throwable) throws Exception {
+                        if (throwable != null) {
+                            Toast.makeText(PhotoDateListActivity.this, "Ошибка!", Toast.LENGTH_LONG);
+                        } else {
                             adapter.setDates(datePhotos);
                         }
                     }
                 }));
     }
 
-    private class Adapter extends RecyclerView.Adapter<ViewHolder>{
+    private class Adapter extends RecyclerView.Adapter<ViewHolder> {
         ArrayList<DatePhotos> dates = new ArrayList<>();
 
-        public void setDates (List<DatePhotos> dates){
+        public void setDates(List<DatePhotos> dates) {
             this.dates.clear();
             this.dates.addAll(dates);
             notifyDataSetChanged();
         }
+
         @NonNull
         @Override
         public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -110,7 +110,7 @@ public class PhotoDateListActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    private class ViewHolder extends RecyclerView.ViewHolder{
+    private class ViewHolder extends RecyclerView.ViewHolder {
         DatePhotos date;
 
         TextView text;
@@ -129,7 +129,7 @@ public class PhotoDateListActivity extends AppCompatActivity {
             });
         }
 
-        public void bind(DatePhotos date){
+        public void bind(DatePhotos date) {
             this.date = date;
             text.setText(date.getDate());
         }

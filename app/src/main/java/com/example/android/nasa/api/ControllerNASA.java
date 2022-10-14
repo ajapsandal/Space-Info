@@ -21,20 +21,18 @@ public class ControllerNASA {
     private Api api;
 
 
-    public ControllerNASA(){
+    public ControllerNASA() {
         Retrofit retrofit = createRetrofitApi();
 
         api = retrofit.create(Api.class);
-
-
     }
 
-    public Api getApi(){
+    public Api getApi() {
         return api;
     }
 
 
-    private OkHttpClient createOkHttpClient(){
+    private OkHttpClient createOkHttpClient() {
         final OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
         httpClient.addInterceptor(new Interceptor() {
             @NonNull
@@ -55,7 +53,7 @@ public class ControllerNASA {
         return httpClient.build();
     }
 
-    private Retrofit createRetrofitApi(){
+    private Retrofit createRetrofitApi() {
         return new Retrofit.Builder()
                 .baseUrl("https://api.nasa.gov/EPIC/api/")
                 .addConverterFactory(GsonConverterFactory.create())
